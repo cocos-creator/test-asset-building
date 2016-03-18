@@ -25,7 +25,7 @@ cc.Class({
         previewSprite: cc.Sprite,
         urlResMainAsset: "",
         urlResSubAsset: "",
-        previewSprite2: cc.Sprite,
+        previewSprite2: cc.Sprite
     },
 
     // use this for initialization
