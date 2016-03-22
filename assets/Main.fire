@@ -998,6 +998,7 @@
       "__id__": 3
     },
     "_enabled": true,
+    "isAlignOnce": false,
     "_alignFlags": 41,
     "_left": 0.5,
     "_right": 10,
@@ -1208,6 +1209,7 @@
       "__id__": 27
     },
     "_enabled": true,
+    "isAlignOnce": false,
     "_alignFlags": 10,
     "_left": 1.1,
     "_right": 0,
@@ -1547,6 +1549,7 @@
       "__id__": 32
     },
     "_enabled": true,
+    "isAlignOnce": false,
     "_alignFlags": 10,
     "_left": 1.1,
     "_right": 0,
@@ -1840,6 +1843,7 @@
       "__id__": 42
     },
     "_enabled": true,
+    "isAlignOnce": false,
     "_alignFlags": 10,
     "_left": 1.1,
     "_right": 0,
@@ -2092,6 +2096,7 @@
       "__id__": 51
     },
     "_enabled": true,
+    "isAlignOnce": false,
     "_alignFlags": 9,
     "_left": 20,
     "_right": 0.3359375,
@@ -2184,6 +2189,7 @@
       "__id__": 54
     },
     "_enabled": true,
+    "isAlignOnce": false,
     "_alignFlags": 36,
     "_left": 20,
     "_right": 20,
@@ -2256,16 +2262,16 @@
     "prefabToTestRefFromRes": {
       "__uuid__": "a8c2411b-d745-4b6d-82aa-07d1dd3ace3b"
     },
-    "urlResAsset": "resources://load by url/sheep/sheep_hit",
+    "urlResAsset": "load by url/sheep/sheep_hit",
     "previewAnimation": {
       "__id__": 18
     },
-    "urlResRawAsset": "resources://load by url/resources raw.png",
+    "urlResRawAsset": "load by url/resources raw.png",
     "previewSprite": {
       "__id__": 20
     },
-    "urlResMainAsset": "resources://load by url/main_asset",
-    "urlResSubAsset": "resources://load by url/main_asset.plist/CheckBox_Normal",
+    "urlResMainAsset": "load by url/main_asset",
+    "urlResSubAsset": "load by url/main_asset.plist/CheckBox_Normal",
     "previewSprite2": {
       "__id__": 22
     }

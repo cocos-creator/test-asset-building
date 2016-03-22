@@ -79,24 +79,24 @@ cc.Class({
     loadByUrl (done) {
         this.log('Test resources (raw) assets loaded by dynamic url:');
 
-        cc.loader.load(this.urlResAsset, (err, clip) => {
+        cc.loader.loadRes(this.urlResAsset, (err, clip) => {
             this.logResult('asset (AnimationClip)', clip instanceof cc.AnimationClip);
             if (clip) {
                 this.previewAnimation.addClip(clip, 'test');
                 this.previewAnimation.play('test');
             }
 
-            cc.loader.load(this.urlResRawAsset, (err, tex) => {
+            cc.loader.loadRes(this.urlResRawAsset, (err, tex) => {
                 this.logResult('raw asset (Texture2D)', tex instanceof cc.Texture2D);
                 if (tex) {
                     var sp = new cc.SpriteFrame(tex);
                     this.previewSprite.spriteFrame = sp;
                 }
 
-                cc.loader.load(this.urlResMainAsset, (err, atlas) => {
+                cc.loader.loadRes(this.urlResMainAsset, (err, atlas) => {
                     this.logResult('main asset (SpriteAtlas)', atlas instanceof cc.SpriteAtlas);
 
-                    cc.loader.load(this.urlResSubAsset, (err, spriteFrame) => {
+                    cc.loader.loadRes(this.urlResSubAsset, (err, spriteFrame) => {
                         this.logResult('sub asset (SpriteFrame)', spriteFrame instanceof cc.SpriteFrame);
                         if (spriteFrame) {
                             this.previewSprite2.spriteFrame = spriteFrame;
