@@ -86,17 +86,18 @@ cc.Class({
                 this.previewAnimation.play('test');
             }
 
-            cc.loader.loadRes(this.urlResRawAsset, (err, tex) => {
+            cc.loader.loadRes(this.urlResRawAsset, cc.Texture2D, (err, tex) => {
                 this.logResult('raw asset (Texture2D)', tex instanceof cc.Texture2D);
                 if (tex) {
                     var sp = new cc.SpriteFrame(tex);
                     this.previewSprite.spriteFrame = sp;
                 }
 
-                cc.loader.loadRes(this.urlResMainAsset, (err, atlas) => {
+                cc.loader.loadRes(this.urlResMainAsset, cc.SpriteAtlas, (err, atlas) => {
                     this.logResult('main asset (SpriteAtlas)', atlas instanceof cc.SpriteAtlas);
 
-                    cc.loader.loadRes(this.urlResSubAsset, (err, spriteFrame) => {
+                    cc.loader.loadRes(this.urlResSubAsset, cc.SpriteFrame, (err, spriteFrame) => {
+                        //var spriteFrame = atlas.getSpriteFrame('CheckBox_Normal');
                         this.logResult('sub asset (SpriteFrame)', spriteFrame instanceof cc.SpriteFrame);
                         if (spriteFrame) {
                             this.previewSprite2.spriteFrame = spriteFrame;
@@ -113,7 +114,7 @@ cc.Class({
             this.log(`  ${name} - loaded \u2705`);
         }
         else {
-            this.log(`[ERROR] ${name} not loaded \u274C`);
+            this.log(`  ERROR: ${name} not loaded \u274C`);
         }
     },
     
